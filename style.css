@@ -378,10 +378,9 @@ a {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  float: right;
+  text-align: right;
+  width: 25%; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -403,8 +402,7 @@ a {
     .main-navigation ul li:hover > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
+    text-align: right; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -594,6 +592,9 @@ body {
     .site-main .entry-content,
     .site-main .entry-footer {
       margin: 0.6em 0 0 0; } }
+
+.site-branding {
+  width: 75%; }
 
 .cat-links a {
   padding: 0.25em 0.5em; }
