@@ -1,0 +1,45 @@
+div#secondary {
+	border-top: 1px solid rgb(186, 186, 186);
+	margin: 5em 0 0 0;
+	padding: 3em 0 0 0;
+}
+
+.widget {
+	margin: 0 0 1.5em;
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+
+.widget_archive,
+.widget_categories {
+	float: left;
+	width: 45%;
+}
+
+.widget_categories {
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+	}
+
+	li {
+		float: left;
+		margin: 0.3em 0.2em;
+	}
+
+	a {
+		background: rgb(140, 147, 170);
+		color: rgb(255, 255, 255);
+		padding: 0.25em 0.5em;
+	}
+}

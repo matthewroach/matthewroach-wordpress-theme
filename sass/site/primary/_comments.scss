@@ -1,0 +1,27 @@
+
+.comments-title {
+	margin: 0 0 2em 0;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+
+// --- Form --- */
+
+.comment-form {
+
+	label {
+		display: block
+	}
+}
+
+.form-allowed-tags,
+.form-allowed-tags code {
+	@include font-size(1.1);
+}
