@@ -381,6 +381,10 @@ a {
   float: right;
   text-align: right;
   width: 25%; }
+  @media screen and (max-width: 450px) {
+    .main-navigation {
+      float: left;
+      width: 100%; } }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -403,6 +407,11 @@ a {
       left: auto; }
   .main-navigation li {
     text-align: right; }
+    @media screen and (max-width: 700px) {
+      .main-navigation li {
+        float: left;
+        text-align: center;
+        width: 33.3333%; } }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -556,8 +565,14 @@ body {
 
 .site {
   margin: 0 auto;
-  padding: 3em 12%;
+  padding: 3em 4%;
   max-width: 650px; }
+  @media screen and (max-width: 900px) {
+    .site {
+      padding: 3em 8%; } }
+  @media screen and (max-width: 700px) {
+    .site {
+      padding: 3em 12%; } }
   @media screen and (max-width: 380px) {
     .site {
       padding: 3em 5%; } }
@@ -571,6 +586,10 @@ body {
   font-family: 'Dancing Script', cursive;
   float: left;
   width: 75%; }
+  @media screen and (max-width: 450px) {
+    .site-branding {
+      text-align: center;
+      width: 100%; } }
   .site-branding h1 {
     font-size: 40px;
     line-height: 2; }
