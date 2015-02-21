@@ -409,17 +409,6 @@ a {
     display: block;
     text-decoration: none; }
 
-/* Small menu */
-.menu-toggle {
-  display: none; }
-
-@media screen and (max-width: 600px) {
-  .menu-toggle,
-  .main-navigation.toggled .nav-menu {
-    display: block; }
-
-  .main-navigation ul {
-    display: none; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -595,6 +584,9 @@ body {
   .site-main .entry-title a {
     font-weight: 900;
     text-decoration: none; }
+  @media screen and (max-width: 530px) {
+    .site-main .entry-title {
+      font-size: 24px; } }
 .site-main .entry-content,
 .site-main .entry-footer {
   margin: 1rem 0 1rem 0; }
