@@ -162,7 +162,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  background: #eee;
+  background: #fffbee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 12px;
   line-height: 1.6;
@@ -549,7 +549,7 @@ div#secondary {
 10.0 Content
 --------------------------------------------------------------*/
 body {
-  font-size: 18px; }
+  font-size: 16px; }
   @media screen and (max-width: 530px) {
     body {
       font-size: 14px; } }
@@ -557,7 +557,29 @@ body {
 .site {
   margin: 0 auto;
   padding: 3em 1em;
-  max-width: 700px; }
+  max-width: 650px; }
+
+.site-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin: 0 0 5rem 0;
+  padding: 0 0 2rem 0; }
+
+.site-branding {
+  font-family: 'Dancing Script', cursive;
+  float: left;
+  width: 75%; }
+  .site-branding h1 {
+    font-size: 40px;
+    line-height: 2; }
+  .site-branding a {
+    text-decoration: none; }
+    .site-branding a:hover {
+      color: #787878; }
+
+.single-post .site-header {
+  opacity: 0.3; }
+  .single-post .site-header:hover {
+    opacity: 1; }
 
 .site-main article {
   margin: 4em 0 3em 0; }
@@ -578,10 +600,14 @@ body {
   .site-main .entry-meta a {
     text-decoration: none; }
 .site-main .entry-title {
-  font-size: 30px; }
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px; }
   .site-main .entry-title a {
+    color: #323232;
     font-weight: 900;
     text-decoration: none; }
+    .site-main .entry-title a:hover {
+      color: #787878; }
   @media screen and (max-width: 530px) {
     .site-main .entry-title {
       font-size: 24px; } }
@@ -593,9 +619,11 @@ body {
     .site-main .entry-footer {
       margin: 0.6em 0 0 0; } }
 
-.site-branding {
-  float: left;
-  width: 75%; }
+.size-large {
+  display: block;
+  margin: 1rem 0 1rem -15%;
+  max-width: 130%;
+  width: 130%; }
 
 .cat-links a {
   padding: 0.25em 0.5em; }

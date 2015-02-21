@@ -1,5 +1,5 @@
 body {
-	@include font-size(1.8);
+	@include font-size(1.6);
 
 	@media screen and (max-width: 530px) {
 		@include font-size(1.4);
@@ -11,8 +11,44 @@ body {
 .site {
 	margin: 0 auto;
 	padding: 3em 1em;
-	max-width: 700px;
+	max-width: 650px;
 }
+
+
+
+.site-header {
+	border-bottom: 1px dashed rgb(200, 200, 200);
+	margin: 0 0 5rem 0;
+	padding: 0 0 2rem 0;
+}
+
+.site-branding {
+	font-family: 'Dancing Script', cursive;
+	float: left;
+	width: 75%;
+
+	h1 {
+		@include font-size(4);
+		line-height: 2;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			color: rgb(120, 120, 120);
+		}
+	}
+}
+
+.single-post .site-header {
+	opacity: 0.3;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
 
 
 .site-main {
@@ -50,11 +86,17 @@ body {
 	}
 
 	.entry-title {
-		@include font-size(3);
+		font-family: 'Dancing Script', cursive;
+		@include font-size(4);
 
 		a {
+			color: rgb(50, 50, 50);
 			font-weight: 900;
 			text-decoration: none;
+
+			&:hover {
+				color: rgb(120, 120, 120);
+			}
 		}
 
 		@media screen and (max-width: 530px) {
@@ -74,10 +116,14 @@ body {
 }
 
 
-.site-branding {
-	float: left;
-	width: 75%;
+// Post Images
+.size-large {
+	display: block;
+	margin: 1rem 0 1rem -15%;
+	max-width: 130%;
+	width: 130%;
 }
+
 
 
 .cat-links {
