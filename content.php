@@ -6,12 +6,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-<!-- 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php matthewroach_posted_on(); ?>
-		</div>
-		<?php endif; ?> -->
-
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 	</header>
 
@@ -32,9 +26,6 @@
 				$categories_list = get_the_category_list( __( ' ', 'matthewroach' ) );
 				if ( $categories_list && matthewroach_categorized_blog() ) :
 			?>
-<!-- 			<span class="cat-links">
-				<?php printf( __( '%1$s', 'matthewroach' ), $categories_list ); ?>
-			</span> -->
 			<?php endif; // End if categories ?>
 
 			<?php

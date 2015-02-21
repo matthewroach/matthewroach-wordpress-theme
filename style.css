@@ -599,10 +599,13 @@ body {
     .site-branding a:hover {
       color: #787878; }
 
-.single-post .site-header {
+.site-header {
   opacity: 0.2; }
-  .single-post .site-header:hover {
+  .site-header:hover {
     opacity: 1; }
+
+.home .site-header {
+  opacity: 1; }
 
 .site-main article {
   margin: 4em 0 3em 0; }
@@ -655,6 +658,15 @@ body {
     .size-large, .size-full {
       margin-left: 0;
       width: 100%; } }
+
+.page-title {
+  border-bottom: 1px solid #e1e1e1;
+  color: #646464;
+  font-family: 'Dancing Script', cursive;
+  margin: 0 auto;
+  text-align: center;
+  width: 55%;
+  font-size: 30px; }
 
 .cat-links a {
   padding: 0.25em 0.5em; }
