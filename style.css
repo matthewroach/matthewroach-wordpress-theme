@@ -552,12 +552,15 @@ body {
   font-size: 16px; }
   @media screen and (max-width: 530px) {
     body {
-      font-size: 14px; } }
+      font-size: 15px; } }
 
 .site {
   margin: 0 auto;
-  padding: 3em 1em;
+  padding: 3em 12%;
   max-width: 650px; }
+  @media screen and (max-width: 380px) {
+    .site {
+      padding: 3em 5%; } }
 
 .site-header {
   border-bottom: 1px dashed #c8c8c8;
@@ -624,6 +627,14 @@ body {
   margin: 1rem 0 1rem -15%;
   max-width: 130%;
   width: 130%; }
+  @media screen and (max-width: 560px) {
+    .size-large, .size-full {
+      margin-left: -10%;
+      width: 120%; } }
+  @media screen and (max-width: 380px) {
+    .size-large, .size-full {
+      margin-left: 0;
+      width: 100%; } }
 
 .cat-links a {
   padding: 0.25em 0.5em; }
