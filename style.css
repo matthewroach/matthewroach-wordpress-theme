@@ -594,6 +594,7 @@ body {
       margin: 0.6em 0 0 0; } }
 
 .site-branding {
+  float: left;
   width: 75%; }
 
 .cat-links a {
