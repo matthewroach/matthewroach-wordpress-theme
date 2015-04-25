@@ -637,6 +637,10 @@ body {
   @media screen and (max-width: 530px) {
     .site-main .entry-title {
       font-size: 24px; } }
+  .site-main .entry-title.gallery-title {
+    font-size: 30px;
+    margin-bottom: 0.5em;
+    text-align: center; }
 .site-main .entry-content,
 .site-main .entry-footer {
   margin: 1rem 0 1rem 0; }
@@ -678,6 +682,12 @@ body {
   margin: 0 0 3rem 0; }
   .single .home a {
     color: #c8c8c8; }
+
+.hide {
+  display: none; }
+
+.stopscroll {
+  overflow-x: hidden; }
 
 /*--------------------------------------------------------------
 10.1 Posts and pages
@@ -775,6 +785,10 @@ object {
 /*--------------------------------------------------------------
 12.2 Galleries
 --------------------------------------------------------------*/
+.gallery-container {
+  margin-left: -5%;
+  width: 110%; }
+
 .gallery {
   margin-bottom: 1.5em; }
 
@@ -810,5 +824,20 @@ object {
 
 .gallery-caption {
   display: block; }
+
+#galleryModal {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+#galleryModal img {
+  background: rgba(50, 50, 50, 0.5);
+  left: 0;
+  padding: 12%;
+  position: absolute;
+  top: 0;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

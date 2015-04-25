@@ -94,6 +94,8 @@ add_action( 'widgets_init', 'matthewroach_widgets_init' );
 function matthewroach_scripts() {
 	wp_enqueue_style( 'matthewroach-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/js/gallery.js', array(), null, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

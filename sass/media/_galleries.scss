@@ -1,3 +1,8 @@
+.gallery-container {
+	margin-left: -5%;
+	width: 110%;
+}
+
 .gallery {
 	margin-bottom: 1.5em;
 }
@@ -43,4 +48,21 @@
 
 .gallery-caption {
 	display: block;
+}
+
+
+#galleryModal {
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#galleryModal img {
+	background: rgba(50, 50, 50, 0.5);
+	left: 0;
+	padding: 12%;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
