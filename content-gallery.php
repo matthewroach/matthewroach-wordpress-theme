@@ -9,7 +9,7 @@
 		<?php the_title( sprintf( '<h1 class="entry-title gallery-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 	</header>
 
-	<div class="gallery-container">
+	<div class="gallery-container j-Gallery">
 		<?php
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'matthewroach' ) );
 
