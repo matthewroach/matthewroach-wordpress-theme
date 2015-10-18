@@ -558,7 +558,7 @@ div#secondary {
 10.0 Content
 --------------------------------------------------------------*/
 body {
-  font-size: 18px; }
+  font-size: 16px; }
   @media screen and (max-width: 530px) {
     body {
       font-size: 15px; } }
@@ -626,7 +626,7 @@ body {
   .site-main .entry-meta a {
     text-decoration: none; }
 .site-main .entry-title {
-  font-size: 30px; }
+  font-size: 25px; }
   .site-main .entry-title a {
     color: #868fab;
     text-decoration: none; }
@@ -646,6 +646,16 @@ body {
     .site-main .entry-content,
     .site-main .entry-footer {
       margin: 0.6em 0 0 0; } }
+
+.format-link .entry-header {
+  position: relative; }
+  .format-link .entry-header:before {
+    color: #868fab;
+    content: '\221E';
+    font-weight: bold;
+    left: -25px;
+    position: absolute;
+    font-size: 24px; }
 
 .size-large, .size-full {
   display: block;
@@ -682,7 +692,7 @@ body {
     color: #c8c8c8; }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
 .stopscroll {
   overflow-x: hidden; }

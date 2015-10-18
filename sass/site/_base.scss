@@ -1,5 +1,5 @@
 body {
-	@include font-size(1.8);
+	@include font-size(1.6);
 
 	@media screen and (max-width: 530px) {
 		@include font-size(1.5);
@@ -108,8 +108,7 @@ body {
 	}
 
 	.entry-title {
-		// font-family: 'Dancing Script', cursive;
-		@include font-size(3);
+		@include font-size(2.5);
 
 		a {
 			color: rgb(134, 143, 171);
@@ -140,6 +139,22 @@ body {
 		}
 	}
 
+}
+
+
+.format-link {
+	.entry-header {
+		position: relative;
+
+		&:before {
+			color: rgb(134, 143, 171);
+			content: '\221E';
+			font-weight: bold;
+			left: -25px;
+			position: absolute;
+			@include font-size(2.4);
+		}
+	}
 }
 
 
@@ -199,7 +214,7 @@ body {
 
 
 .hide {
-	display: none;
+	display: none !important;
 }
 
 .stopscroll {
