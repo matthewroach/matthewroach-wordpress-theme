@@ -35,6 +35,23 @@ function matthewroach_paging_nav() {
 }
 endif;
 
+if ( ! function_exists( 'matthewroach_get_link_url' ) ) :
+/**
+ * Return the post URL.
+ *
+ * Falls back to the post permalink if no URL is found in the post.
+ *
+ * @see get_url_in_content()
+ *
+ * @return string The Link format URL.
+ */
+function matthewroach_get_link_url() {
+	$has_url = get_url_in_content( get_the_content() );
+
+	return $has_url ? $has_url : apply_filters( 'the_permalink', get_permalink() );
+}
+endif;
+
 if ( ! function_exists( 'matthewroach_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
