@@ -1,5 +1,5 @@
 body {
-	@include font-size(1.6);
+	@include font-size(1.8);
 
 	@media screen and (max-width: 530px) {
 		@include font-size(1.5);
@@ -108,12 +108,11 @@ body {
 	}
 
 	.entry-title {
-		font-family: 'Dancing Script', cursive;
-		@include font-size(4);
+		// font-family: 'Dancing Script', cursive;
+		@include font-size(3);
 
 		a {
-			color: rgb(50, 50, 50);
-			font-weight: 900;
+			color: rgb(134, 143, 171);
 			text-decoration: none;
 
 			&:hover {
@@ -134,7 +133,7 @@ body {
 
 	.entry-content,
 	.entry-footer {
-		margin: 1rem 0 1rem 0;
+		margin: 0 0 1rem 0;
 
 		@media screen and (max-width: 530px) {
 			margin: 0.6em 0 0 0;

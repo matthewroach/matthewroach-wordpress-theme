@@ -558,7 +558,7 @@ div#secondary {
 10.0 Content
 --------------------------------------------------------------*/
 body {
-  font-size: 16px; }
+  font-size: 18px; }
   @media screen and (max-width: 530px) {
     body {
       font-size: 15px; } }
@@ -626,11 +626,9 @@ body {
   .site-main .entry-meta a {
     text-decoration: none; }
 .site-main .entry-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 40px; }
+  font-size: 30px; }
   .site-main .entry-title a {
-    color: #323232;
-    font-weight: 900;
+    color: #868fab;
     text-decoration: none; }
     .site-main .entry-title a:hover {
       color: #787878; }
@@ -643,7 +641,7 @@ body {
     text-align: center; }
 .site-main .entry-content,
 .site-main .entry-footer {
-  margin: 1rem 0 1rem 0; }
+  margin: 0 0 1rem 0; }
   @media screen and (max-width: 530px) {
     .site-main .entry-content,
     .site-main .entry-footer {
