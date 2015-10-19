@@ -156,7 +156,12 @@ dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  border-left: 4px solid #eeeeee;
+  font-style: italic;
+  margin: 0 1.5em 1.5em 1.5em;
+  padding: 0.25em 0 0.25em 1em; }
+  blockquote p:last-child {
+    margin: 0; }
 
 address {
   margin: 0 0 1.5em; }
