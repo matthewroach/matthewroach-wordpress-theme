@@ -41,12 +41,12 @@ if ( ! function_exists( 'matthewroach_get_link_url' ) ) :
  *
  * Falls back to the post permalink if no URL is found in the post.
  *
- * @see get_url_in_content()
+ * @see get_post_meta()
  *
  * @return string The Link format URL.
  */
 function matthewroach_get_link_url() {
-	$has_url = get_url_in_content( get_the_content() );
+	$has_url = get_post_meta(get_post()->ID, 'url', true);
 
 	return $has_url ? $has_url : apply_filters( 'the_permalink', get_permalink() );
 }
