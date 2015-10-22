@@ -158,6 +158,13 @@ body {
 }
 
 
+.format-status {
+	.entry-content p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+
 // Post Images
 .size-large, .size-full {
 	display: block;
