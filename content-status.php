@@ -12,8 +12,7 @@
 
 	<footer class="entry-footer">
 		<a href="<?php echo get_permalink() ?>">&#35;</a> -
-		<time></time>
-		<?php echo get_the_date('F j, Y \a\t g:ia') ?>
+		<time><?php echo get_the_date('F j, Y \a\t g:ia') ?></time>
 	</footer>
 
 </article>
