@@ -19,12 +19,6 @@ div#secondary {
 }
 
 
-.widget_archive,
-.widget_categories {
-	float: left;
-	width: 45%;
-}
-
 .widget_categories {
 
 	ul {
@@ -38,8 +32,15 @@ div#secondary {
 	}
 
 	a {
-		background: rgb(140, 147, 170);
+		background-color: rgb(156, 171, 221);
+	  border-right: 2px solid rgb(121, 132, 168);
+		border-bottom: 2px solid rgb(121, 132, 168);
 		color: rgb(255, 255, 255);
 		padding: 0.25em 0.5em;
+
+		&:hover {
+			border-color: transparent;
+			text-decoration: none;
+		}
 	}
 }

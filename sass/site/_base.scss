@@ -1,4 +1,5 @@
 body {
+	border-top: 5px solid rgb(121, 132, 168);
 	@include font-size(1.6);
 
 	@media screen and (max-width: 530px) {

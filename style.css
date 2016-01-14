@@ -543,11 +543,6 @@ div#secondary {
 .widget_search .search-submit {
   display: none; }
 
-.widget_archive,
-.widget_categories {
-  float: left;
-  width: 45%; }
-
 .widget_categories ul {
   list-style: none;
   margin-left: 0; }
@@ -555,14 +550,20 @@ div#secondary {
   float: left;
   margin: 0.3em 0.2em; }
 .widget_categories a {
-  background: #8c93aa;
+  background-color: #9cabdd;
+  border-right: 2px solid #7984a8;
+  border-bottom: 2px solid #7984a8;
   color: white;
   padding: 0.25em 0.5em; }
+  .widget_categories a:hover {
+    border-color: transparent;
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
 body {
+  border-top: 5px solid #7984a8;
   font-size: 16px; }
   @media screen and (max-width: 530px) {
     body {
