@@ -136,7 +136,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Gentium Book Basic", serif;
+  font-family: "Helvetica", serif;
   font-size: 16px;
   line-height: 1.7; }
 
@@ -564,10 +564,11 @@ div#secondary {
 --------------------------------------------------------------*/
 body {
   border-top: 5px solid #7984a8;
-  font-size: 16px; }
+  font-weight: 100;
+  font-size: 14px; }
   @media screen and (max-width: 530px) {
     body {
-      font-size: 15px; } }
+      font-size: 13px; } }
 
 .site {
   margin: 0 auto;
