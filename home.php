@@ -16,15 +16,15 @@ get_header(); ?>
 		<?php
 
 			$args = array(
-					'numberposts' => 1,
+					'posts_per_page' => 4,
 					'post_type' => 'post',
 					'post_status' => 'publish',
 					'order' => 'DESC',
 					'tax_query' => array(
 						array(
-							'taxonomy' => 'post_format',
+							'taxonomy' => 'category',
 							'field' => 'slug',
-							'terms' => array('post-format-image'),
+							'terms' => 'instagram',
 							'operator' => 'IN'
 						)
 					)
@@ -54,7 +54,7 @@ get_header(); ?>
 
 
 		<?php $args = array(
-'posts_per_page' => 1,
+						'posts_per_page' => 1,
 						'post_type' => 'post',
 						'post_status' => 'publish',
 						'order' => 'DESC',
@@ -64,7 +64,13 @@ get_header(); ?>
 								'field' => 'slug',
 								'terms' => array('post-format-quote','post-format-audio','post-format-gallery','post-format-image','post-format-link','post-format-status'),
 								'operator' => 'NOT IN'
-							)
+							),
+							array(
+							'taxonomy' => 'category',
+							'field' => 'slug',
+							'terms' => array( 'links', 'status', 'instagram' ),
+							'operator' => 'NOT IN'
+						)
 						)
 				  );
 
