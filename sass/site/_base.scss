@@ -223,6 +223,23 @@ body {
 
 
 
+// Instagram / Image Reel on homepage
+
+.image-reel {
+	display: inline-block;
+	margin-left: -20%;
+	width: 140%;
+
+	article {
+		float: left;
+		margin: 0 2.5% 0 2.5%;
+		width: 20%;
+	}
+}
+
+
+
+
 .hide {
 	display: none !important;
 }
