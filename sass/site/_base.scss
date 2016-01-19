@@ -1,6 +1,7 @@
 body {
 	border-top: 5px solid rgb(121, 132, 168);
 	font-weight: 100;
+	overflow-x: hidden;
 
 	@include font-size(1.4);
 
@@ -250,6 +251,24 @@ body {
 	}
 }
 
+
+// Post Listing Home Page
+.post-listing {
+	border-top: 1px solid rgb(200, 200, 200);
+  padding: 3em 0 0 0;
+
+	article {
+		margin: 1em 0 1em 0;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
 
 
 .hide {

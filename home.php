@@ -89,6 +89,48 @@ get_header(); ?>
 
 		?>
 
+
+		<div class="post-listing">
+
+		<?php $args = array(
+						'posts_per_page' => 10,
+						'offset' => 1,
+						'post_type' => 'post',
+						'post_status' => 'publish',
+						'order' => 'DESC',
+						'tax_query' => array(
+							array(
+								'taxonomy' => 'post_format',
+								'field' => 'slug',
+								'terms' => array('post-format-quote','post-format-audio','post-format-gallery','post-format-image','post-format-link','post-format-status'),
+								'operator' => 'NOT IN'
+							),
+							array(
+							'taxonomy' => 'category',
+							'field' => 'slug',
+							'terms' => array( 'links', 'status', 'instagram' ),
+							'operator' => 'NOT IN'
+						)
+						)
+				  );
+
+
+			// The Query
+			$query = new WP_Query( $args );
+
+			// The Loop
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) {
+					$query->the_post();
+					// do something
+					get_template_part( 'content', 'home-listing' );
+				}
+			}
+
+		?>
+
+		</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
