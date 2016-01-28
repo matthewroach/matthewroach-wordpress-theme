@@ -10,7 +10,47 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<!--
+			Status
+		-->
+		<div class="status">
 
+		<?php
+
+			$args = array(
+						'posts_per_page' => 1,
+						'post_type' => 'post',
+						'post_status' => 'publish',
+						'order' => 'DESC',
+						'tax_query' => array(
+							array(
+								'taxonomy' => 'post_format',
+								'field' => 'slug',
+								'terms' => array('post-format-status'),
+								'operator' => 'IN'
+							)
+						)
+		  );
+
+			$query = new WP_Query( $args );
+
+			// The Loop
+			if ( $query->have_posts() ) {
+				while ( $query->have_posts() ) {
+					$query->the_post();
+					get_template_part( 'content', 'status' );
+				}
+			}
+
+			wp_reset_postdata();
+		?>
+
+		</div>
+
+
+		<!--
+			Instagram Feed
+		-->
 		<div class="image-reel">
 
 		<?php
@@ -30,29 +70,25 @@ get_header(); ?>
 					)
 		  );
 
-
-			// The Query
 			$query = new WP_Query( $args );
 
 			// The Loop
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post();
-					// do something
 					get_template_part( 'content', 'image-home' );
 				}
 			}
 
-			// Restore original Post Data
 			wp_reset_postdata();
-
-			// var_dump( $recent );
 		?>
 
 		</div>
 
 
-
+		<!--
+			Latest Article
+		-->
 		<?php $args = array(
 						'posts_per_page' => 1,
 						'post_type' => 'post',
@@ -74,15 +110,11 @@ get_header(); ?>
 						)
 				  );
 
-
-			// The Query
 			$query = new WP_Query( $args );
 
-			// The Loop
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post();
-					// do something
 					get_template_part( 'content', get_post_format() );
 				}
 			}
@@ -90,6 +122,9 @@ get_header(); ?>
 		?>
 
 
+		<!--
+			Next 10 Recent Article after the one above
+		-->
 		<div class="post-listing">
 
 		<?php $args = array(
@@ -114,15 +149,11 @@ get_header(); ?>
 						)
 				  );
 
-
-			// The Query
 			$query = new WP_Query( $args );
 
-			// The Loop
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post();
-					// do something
 					get_template_part( 'content', 'home-listing' );
 				}
 			}
