@@ -26,7 +26,7 @@ get_header(); ?>
 							array(
 								'taxonomy' => 'post_format',
 								'field' => 'slug',
-								'terms' => array('post-format-status'),
+								'terms' => array('post-format-status','post-format-link'),
 								'operator' => 'IN'
 							)
 						)
@@ -38,7 +38,7 @@ get_header(); ?>
 			if ( $query->have_posts() ) {
 				while ( $query->have_posts() ) {
 					$query->the_post();
-					get_template_part( 'content', 'status' );
+					get_template_part( 'content', get_post_format() );
 				}
 			}
 
