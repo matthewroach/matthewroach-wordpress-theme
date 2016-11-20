@@ -23,11 +23,15 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header h-card" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title">
 				<img class="u-photo hide" src="http://images.matthewroach.me/blog/20161120211539/2016-05-31-18.11.35.jpg" al="Image of Matthew Roach" />
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="me" class="h-card" title="Matthew Roach">
+				<p class="p-note hide">
+					Web Developer, loves to tinker on side projects, loves a cup of tea, married to
+					@pamelaroach, Father to @toddroach1 and Alice. Welsh living in Scotland.
+				</p>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="me" class="u-url" title="Matthew Roach">
 					<?php bloginfo( 'name' ); ?>
 				</a>
 			</h1>

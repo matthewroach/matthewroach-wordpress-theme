@@ -7,7 +7,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( matthewroach_get_link_url() ) ), '</a></h1>' ); ?>
+		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" class="u-url" rel="bookmark">', esc_url( matthewroach_get_link_url() ) ), '</a></h1>' ); ?>
+		<a rel="author" class="p-author h-card hide" href="http://matthewroach.me/">Matthew Roach</a>
 	</header>
 
 	<div class="entry-content">
