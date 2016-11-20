@@ -26,6 +26,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title">
+				<img class="u-photo hidde" src="http://images.matthewroach.me/blog/20161120211539/2016-05-31-18.11.35.jpg" al="Image of Matthew Roach" />
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="me" class="h-card" title="Matthew Roach">
 					<?php bloginfo( 'name' ); ?>
 				</a>
