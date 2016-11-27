@@ -11,6 +11,10 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="twitter:site" content="@faxtion" />
+<meta name="twitter:image" content="http://images.matthewroach.me/blog/20161120211539/2016-05-31-18.11.35.jpg" />
+
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
