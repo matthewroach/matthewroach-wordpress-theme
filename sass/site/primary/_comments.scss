@@ -1,6 +1,13 @@
 
+.comment-list {
+	list-style: none;
+	margin-left: 0;
+}
+
 .comments-title {
-	margin: 0 0 2em 0;
+	border-top: 1px solid rgb(200,200,200);
+	margin: 0 0 1em 0;
+	padding: 0.55em 0 0 0;
 }
 
 .comment-content a {
@@ -12,8 +19,6 @@
 }
 
 
-// --- Form --- */
-
 .comment-form {
 
 	label {
@@ -24,4 +29,13 @@
 .form-allowed-tags,
 .form-allowed-tags code {
 	@include font-size(1.1);
+}
+
+
+// Webmentions
+
+.webmention {
+	.comment-author.vcard {
+		display: none;
+	}
 }

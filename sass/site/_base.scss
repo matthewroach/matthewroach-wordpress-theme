@@ -3,8 +3,6 @@ body {
 	font-weight: 100;
 	overflow-x: hidden;
 
-	@include font-size(1.4);
-
 	@media screen and (max-width: 530px) {
 		@include font-size(1.3);
 	}

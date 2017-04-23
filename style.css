@@ -138,7 +138,7 @@ textarea {
   color: #404040;
   font-family: "Helvetica", serif;
   font-size: 16px;
-  line-height: 1.7; }
+  line-height: 1.8; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
@@ -567,16 +567,15 @@ div#secondary {
 body {
   border-top: 5px solid #7984a8;
   font-weight: 100;
-  overflow-x: hidden;
-  font-size: 14px; }
+  overflow-x: hidden; }
   @media screen and (max-width: 530px) {
     body {
       font-size: 13px; } }
 
 .site {
   margin: 0 auto;
-  padding: 3em 4%;
-  max-width: 750px; }
+  padding: 3em 2%;
+  max-width: 950px; }
   @media screen and (max-width: 900px) {
     .site {
       padding: 3em 8%;
@@ -768,8 +767,14 @@ body {
 /*--------------------------------------------------------------
 10.3 Comments
 --------------------------------------------------------------*/
+.comment-list {
+  list-style: none;
+  margin-left: 0; }
+
 .comments-title {
-  margin: 0 0 2em 0; }
+  border-top: 1px solid #c8c8c8;
+  margin: 0 0 1em 0;
+  padding: 0.55em 0 0 0; }
 
 .comment-content a {
   word-wrap: break-word; }
@@ -783,6 +788,9 @@ body {
 .form-allowed-tags,
 .form-allowed-tags code {
   font-size: 11px; }
+
+.webmention .comment-author.vcard {
+  display: none; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
