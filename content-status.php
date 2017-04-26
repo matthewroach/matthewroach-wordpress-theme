@@ -11,8 +11,9 @@
 	</div>
 
 	<footer class="entry-footer">
-		<a href="<?php echo get_permalink() ?>">&#35;</a> -
-		<time><?php echo get_the_date('F j, Y \a\t g:ia') ?></time>
+		<a href="<?php echo get_permalink() ?>" title="Permalink to Status Update">
+			<time><?php echo get_the_date('F j, Y \a\t g:ia') ?></time>
+		</a>
 	</footer>
 
 </article>
