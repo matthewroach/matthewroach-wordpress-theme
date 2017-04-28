@@ -2,11 +2,13 @@
 /**
  * @package matthewroach
  */
+
+$format = get_post_format( $post_id );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header">
+	<header class="entry-header <?php if ( $format == 'status' ) { ?>hide<?php } ?>">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" class="u-url" rel="bookmark">', esc_url( matthewroach_get_link_url() ) ), '</a></h1>' ); ?>
 		<a rel="author" class="p-author h-card hide" href="http://matthewroach.me/">Matthew Roach</a>
 	</header>
@@ -44,8 +46,8 @@
 					$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'matthewroach' );
 				}
 			} // end check for categories on this blog
-		?>
 
+		?>
 			<p class="cat-links">
 				<?php matthewroach_posted_on(); ?>
 				<?php printf( __( '%1$s', 'matthewroach' ), $category_list ); ?>
