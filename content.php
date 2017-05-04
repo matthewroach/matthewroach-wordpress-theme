@@ -42,7 +42,7 @@
 			endif; // End if 'post' == get_post_type()
 
 		if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'matthewroach' ), __( '1 Comment', 'matthewroach' ), __( '% Comments', 'matthewroach' ) ); ?></span>
+		<!-- <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'matthewroach' ), __( '1 Comment', 'matthewroach' ), __( '% Comments', 'matthewroach' ) ); ?></span>-->
 		<?php endif; ?>
 
 		<?php edit_post_link( __( 'Edit', 'matthewroach' ), '<span class="edit-link">', '</span>' ); ?>
