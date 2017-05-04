@@ -121,7 +121,7 @@ get_header(); ?>
 							array(
 							'taxonomy' => 'category',
 							'field' => 'slug',
-							'terms' => array( 'instagram' ),
+							'terms' => array( 'instagram', 'status' ),
 							'operator' => 'NOT IN'
 						 )
 						)
