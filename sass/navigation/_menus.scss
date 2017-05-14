@@ -1,12 +1,4 @@
 .main-navigation {
-	float: right;
-	text-align: right;
-	width: 25%;
-
-	@media screen and (max-width: 450px) {
-		float: left;
-		width: 100%;
-	}
 
 	ul {
 		list-style: none;
@@ -43,12 +35,12 @@
 		}
 	}
 	li {
-		text-align: right;
+		float: left;
+		text-align: center;
+		width: 25%;
 
 		@media screen and (max-width: 450px) {
 			float: left;
-			text-align: center;
-			width: 33.3333%;
 		}
 	}
 	a {
