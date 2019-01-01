@@ -22,7 +22,7 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
-			Webmentions
+			Replies
 			<?php
 				// printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'matthewroach' ),
 					// number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
@@ -40,7 +40,7 @@ if ( post_password_required() ) {
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'type'			 => 'webmention',
+
 					'style'      => 'ul',
 					'short_ping' => true,
 				) );
