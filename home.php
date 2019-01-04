@@ -19,7 +19,7 @@ get_header(); ?>
 							array(
 							'taxonomy' => 'category',
 							'field' => 'slug',
-							'terms' => array( 'instagram', 'status' ),
+							'terms' => array( 'instagram', 'status', 'bookshelf' ),
 							'operator' => 'NOT IN'
 						 )
 						)
@@ -88,7 +88,7 @@ get_header(); ?>
 							array(
 							'taxonomy' => 'category',
 							'field' => 'slug',
-							'terms' => array( 'instagram', 'status' ),
+							'terms' => array( 'instagram', 'status', 'bookshelf' ),
 							'operator' => 'NOT IN'
 						 )
 						)
@@ -121,7 +121,7 @@ get_header(); ?>
 							array(
 							'taxonomy' => 'category',
 							'field' => 'slug',
-							'terms' => array( 'instagram', 'status' ),
+							'terms' => array( 'instagram', 'status', 'bookshelf' ),
 							'operator' => 'NOT IN'
 						 )
 						)
