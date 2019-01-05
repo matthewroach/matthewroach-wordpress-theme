@@ -1,12 +1,16 @@
 a {
+	border-bottom: .1em solid $color__link;
 	color: $color__link;
+	text-decoration: none;
 
 	&:visited {
+		border-bottom: .1em solid $color__link-visited;
 		color: $color__link-visited;
 	}
 	&:hover,
 	&:focus,
 	&:active {
+		border-bottom: .1em solid $color__link-hover;
 		color: $color__link-hover;
 	}
 }

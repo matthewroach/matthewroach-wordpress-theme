@@ -8,10 +8,23 @@ get_header(); ?>
 		<main id="main" class="" role="main">
 
 		<?php
+		$args = array(
+			'post_type' => 'post',
+			'order' => 'DESC',
+			'posts_per_page' => -1, // this will retrive all the post that is published
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'category',
+					'field' => 'slug',
+					'terms' => array( 'books' ),
+					'operator' => 'IN'
+				)
+			)
+		);
+		$result = new WP_Query( $args );
 		$prev_year = null;
 		// Check if there are any posts to display
-		if ( have_posts() ) :
-
+		if ( $result-> have_posts() ) :
 		// The Loop
 		while ( have_posts() ) : the_post();
 		$this_year = get_the_date('Y');
@@ -19,7 +32,7 @@ get_header(); ?>
 			if ( $prev_year != null ) {
 				echo '</div>';
 			}
-			echo '<h2>' . $this_year . '</h2><div class="bookshelf">';
+			echo '<h2 class="bookshelf__year-title">' . $this_year . '</h2><div class="bookshelf">';
 		}
 		$prev_year = $this_year;
 		?>

@@ -45,6 +45,8 @@
 		<!-- <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'matthewroach' ), __( '1 Comment', 'matthewroach' ), __( '% Comments', 'matthewroach' ) ); ?></span>-->
 		<?php endif; ?>
 
+		<?php matthewroach_posted_on(); ?>
+
 		<?php edit_post_link( __( 'Edit', 'matthewroach' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer>
 </article>

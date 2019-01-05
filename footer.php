@@ -32,5 +32,11 @@
 
 <?php } ?>
 
+<script>
+	var modalA = new Modal({
+		modalItems: '.tiled-gallery a'
+	});
+</script>
+
 </body>
 </html>

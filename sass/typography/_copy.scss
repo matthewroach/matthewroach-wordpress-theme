@@ -28,12 +28,12 @@ address {
 pre {
 	background: $color__background-pre;
 	font-family: $font__pre;
-	@include font-size(1.2);
+	@include font-size(1.6);
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
-	padding: 0.6em;
+	padding: 1em 0.6em;
 }
 
 code, kbd, tt, var {

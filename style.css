@@ -135,13 +135,14 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: "Helvetica", serif;
-  font-size: 16px;
+  color: #212121;
+  font-family: "Lora", serif;
+  font-size: 18px;
   line-height: 1.8; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Fira Sans", sans-serif; }
 
 h2 {
   font-size: 22px; }
@@ -172,12 +173,12 @@ address {
 pre {
   background: #fffbee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 0.6em; }
+  padding: 1em 0.6em; }
 
 code, kbd, tt, var {
   font-size: 15px;
@@ -376,45 +377,53 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #646f93; }
+  border-bottom: 0.1em solid #212121;
+  color: #212121;
+  text-decoration: none; }
   a:visited {
-    color: #868fab; }
+    border-bottom: 0.1em solid #636363;
+    color: #636363; }
   a:hover, a:focus, a:active {
+    border-bottom: 0.1em solid midnightblue;
     color: midnightblue; }
 
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
-.main-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0; }
-  .main-navigation ul ul {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    float: left;
-    position: absolute;
-    top: 1.5em;
-    left: -999em;
-    z-index: 99999; }
-    .main-navigation ul ul ul {
+.main-navigation {
+  margin-left: -0.4em; }
+  .main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0; }
+    .main-navigation ul ul {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+      float: left;
+      position: absolute;
+      top: 1.5em;
       left: -999em;
-      top: 0; }
-    .main-navigation ul ul li:hover > ul {
-      left: 100%; }
-    .main-navigation ul ul a {
-      width: 200px; }
-  .main-navigation ul li:hover > ul {
-    left: auto; }
-.main-navigation li {
-  float: left;
-  text-align: center;
-  width: 25%; }
-  @media screen and (max-width: 450px) {
-    .main-navigation li {
-      float: left; } }
-.main-navigation a {
-  display: block;
-  text-decoration: none; }
+      z-index: 99999; }
+      .main-navigation ul ul ul {
+        left: -999em;
+        top: 0; }
+      .main-navigation ul ul li:hover > ul {
+        left: 100%; }
+      .main-navigation ul ul a {
+        width: 200px; }
+    .main-navigation ul li:hover > ul {
+      left: auto; }
+  .main-navigation li {
+    float: left;
+    text-align: center; }
+    @media screen and (max-width: 450px) {
+      .main-navigation li {
+        float: left; } }
+  .main-navigation a {
+    border: none;
+    display: block;
+    font-family: "Fira Sans", sans-serif;
+    text-decoration: none;
+    padding: 0.4em; }
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -557,7 +566,6 @@ div#secondary {
 10.0 Content
 --------------------------------------------------------------*/
 body {
-  border-top: 5px solid #7984a8;
   font-weight: 100;
   overflow-x: hidden; }
   @media screen and (max-width: 530px) {
@@ -570,27 +578,25 @@ body {
   max-width: 950px; }
   @media screen and (max-width: 900px) {
     .site {
-      padding: 3em 8%;
-      max-width: 650px; } }
+      padding: 3em 5%; } }
   @media screen and (max-width: 700px) {
     .site {
-      padding: 3em 12%; } }
+      padding: 3em 8%; } }
   @media screen and (max-width: 380px) {
     .site {
       padding: 3em 5%; } }
 
 .site-header {
-  border-bottom: 1px dashed #c8c8c8;
-  margin: 0 0 5rem 0;
-  padding: 0 0 2rem 0; }
+  margin: 0 0 5rem 0; }
 
 .site-branding {
-  font-family: 'Dancing Script', cursive;
-  text-align: center; }
+  font-family: 'Dancing Script', cursive; }
   .site-branding h1 {
     font-size: 40px;
     line-height: 2; }
   .site-branding a {
+    border: none;
+    font-weight: 900;
     text-decoration: none; }
     .site-branding a:hover {
       color: #787878; }
@@ -622,9 +628,9 @@ body {
   .site-main .entry-meta a {
     text-decoration: none; }
 .site-main .entry-title {
-  font-size: 25px; }
+  font-size: 40px; }
   .site-main .entry-title a {
-    color: #868fab;
+    border: none;
     text-decoration: none; }
     .site-main .entry-title a:hover {
       color: #787878; }
@@ -679,8 +685,6 @@ body {
   width: 55%;
   font-size: 30px; }
 
-.cat-links a {
-  padding: 0.25em 0.5em; }
 .cat-links .posted-on a {
   padding-left: 0; }
 
@@ -694,6 +698,8 @@ body {
   display: inline-block;
   margin-left: -25%;
   width: 150%; }
+  .image-reel a {
+    border: none; }
   .image-reel article {
     float: left;
     margin: 0;
@@ -711,10 +717,6 @@ body {
   padding: 3em 0 0 0; }
   .post-listing article {
     margin: 1em 0 1em 0; }
-  .post-listing a {
-    text-decoration: none; }
-    .post-listing a:hover {
-      text-decoration: underline; }
 
 .hide {
   display: none !important; }
@@ -743,6 +745,34 @@ body {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.bookshelf {
+  display: flex;
+  flex-wrap: wrap; }
+
+.bookshelf__year-title {
+  border-bottom: 1px solid #e7e9ef;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2em 1em 1em 0; }
+
+.bookshelf__book {
+  padding: 0 1em;
+  max-width: 180px; }
+
+.bookshelf_book-image {
+  max-width: 180px;
+  max-height: 220px;
+  object-fit: contain; }
+
+.bookshelf__book-link {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.4; }
+
+.bookshelf__book-link a {
+  color: #323232;
+  text-decoration: none; }
 
 /*--------------------------------------------------------------
 10.2 Asides
@@ -867,7 +897,7 @@ object {
 .gallery-caption {
   display: block; }
 
-#galleryModal {
+.gallery-modal {
   background: rgba(50, 50, 50, 0.5);
   height: 100%;
   left: 0;
@@ -877,10 +907,12 @@ object {
   width: 100%;
   z-index: 100000; }
 
-#galleryModal img {
-  height: 85vh;
+.gallery-modal img {
+  max-height: 90vh;
   position: relative;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  max-width: 90%; }
 
 /*# sourceMappingURL=style.css.map */

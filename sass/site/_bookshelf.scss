@@ -1,0 +1,33 @@
+.bookshelf {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bookshelf__year-title {
+	border-bottom: 1px solid #e7e9ef;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 2em 1em 1em 0;
+}
+
+.bookshelf__book {
+	padding: 0 1em;
+	max-width: 180px;
+}
+
+.bookshelf_book-image {
+	max-width: 180px;
+	max-height: 220px;
+	object-fit: contain;
+}
+
+.bookshelf__book-link {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.bookshelf__book-link a {
+	color: rgb(50,50,50);
+	text-decoration: none;
+}

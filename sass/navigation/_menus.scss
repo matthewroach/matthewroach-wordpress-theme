@@ -1,4 +1,5 @@
 .main-navigation {
+	margin-left: -0.4em;
 
 	ul {
 		list-style: none;
@@ -37,15 +38,17 @@
 	li {
 		float: left;
 		text-align: center;
-		width: 25%;
 
 		@media screen and (max-width: 450px) {
 			float: left;
 		}
 	}
 	a {
+		border: none;
 		display: block;
+		font-family: $font__headings;
 		text-decoration: none;
+		padding: 0.4em;
 	}
 
 }
