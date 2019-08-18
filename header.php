@@ -21,7 +21,9 @@
 
 <link href="https://micro.blog/matthew" rel="me" />
 
-<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Purple+Purse&display=swap" rel="stylesheet">
+
 
 <?php wp_head(); ?>
 </head>

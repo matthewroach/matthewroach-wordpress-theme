@@ -1,5 +1,4 @@
 body {
-	// border-top: 5px solid rgb(121, 132, 168);
 	font-weight: 100;
 	overflow-x: hidden;
 
@@ -8,12 +7,10 @@ body {
 	}
 }
 
-
-
 .site {
 	margin: 0 auto;
 	padding: 3em 2%;
-	max-width: 950px;
+	max-width: 850px;
 
 	@media screen and (max-width: 900px) {
 		padding: 3em 5%;
@@ -29,17 +26,14 @@ body {
 }
 
 
-
 .site-header {
 	margin: 0 0 5rem 0;
 }
 
 .site-branding {
-	font-family: 'Dancing Script', cursive;
-
 	h1 {
-		@include font-size(4);
-		line-height: 2;
+		@include font-size(2);
+		line-height: 1.5;
 	}
 
 	a {
@@ -70,7 +64,7 @@ body {
 .site-main {
 
 	article {
-		margin: 4em 0 3em 0;
+		margin: 3em 0 3em 0;
 
 		&:first-child {
 			margin-top: 0;
@@ -102,7 +96,7 @@ body {
 	}
 
 	.entry-title {
-		@include font-size(4);
+		@include font-size(5);
 
 		a {
 			border: none;
@@ -180,12 +174,7 @@ body {
 
 
 .page-title {
-	border-bottom: 1px solid rgb(225, 225, 225);
-	color: rgb(100, 100, 100);
-	font-family: 'Dancing Script', cursive;
-	margin: 0 auto;
-	text-align: center;
-	width: 55%;
+	font-family: $font__headings;
 	@include font-size(3);
 }
 

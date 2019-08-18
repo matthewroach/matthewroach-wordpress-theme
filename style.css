@@ -135,14 +135,14 @@ button,
 input,
 select,
 textarea {
-  color: #212121;
-  font-family: "Lora", serif;
+  color: black;
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
   line-height: 1.8; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Fira Sans", sans-serif; }
+  font-family: "Barlow", sans-serif; }
 
 h2 {
   font-size: 22px; }
@@ -154,7 +154,7 @@ p {
   margin-bottom: 1.5em; }
 
 b, strong {
-  font-weight: bold; }
+  font-weight: 700; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -377,15 +377,13 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  border-bottom: 0.1em solid #212121;
-  color: #212121;
+  border-bottom: 0.1em solid #49d1ca;
+  color: black;
   text-decoration: none; }
   a:visited {
-    border-bottom: 0.1em solid #636363;
-    color: #636363; }
+    border-bottom: 0.1em solid #b6b6b6; }
   a:hover, a:focus, a:active {
-    border-bottom: 0.1em solid midnightblue;
-    color: midnightblue; }
+    border-bottom: 0.1em solid #077748; }
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -421,7 +419,7 @@ a {
   .main-navigation a {
     border: none;
     display: block;
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Barlow", sans-serif;
     text-decoration: none;
     padding: 0.4em; }
 
@@ -575,7 +573,7 @@ body {
 .site {
   margin: 0 auto;
   padding: 3em 2%;
-  max-width: 950px; }
+  max-width: 850px; }
   @media screen and (max-width: 900px) {
     .site {
       padding: 3em 5%; } }
@@ -589,17 +587,15 @@ body {
 .site-header {
   margin: 0 0 5rem 0; }
 
-.site-branding {
-  font-family: 'Dancing Script', cursive; }
-  .site-branding h1 {
-    font-size: 40px;
-    line-height: 2; }
-  .site-branding a {
-    border: none;
-    font-weight: 900;
-    text-decoration: none; }
-    .site-branding a:hover {
-      color: #787878; }
+.site-branding h1 {
+  font-size: 20px;
+  line-height: 1.5; }
+.site-branding a {
+  border: none;
+  font-weight: 900;
+  text-decoration: none; }
+  .site-branding a:hover {
+    color: #787878; }
 
 .site-header {
   opacity: 0.2; }
@@ -610,7 +606,7 @@ body {
   opacity: 1; }
 
 .site-main article {
-  margin: 4em 0 3em 0; }
+  margin: 3em 0 3em 0; }
   .site-main article:first-child {
     margin-top: 0; }
   .site-main article li {
@@ -628,7 +624,7 @@ body {
   .site-main .entry-meta a {
     text-decoration: none; }
 .site-main .entry-title {
-  font-size: 40px; }
+  font-size: 50px; }
   .site-main .entry-title a {
     border: none;
     text-decoration: none; }
@@ -677,12 +673,7 @@ body {
       width: 100%; } }
 
 .page-title {
-  border-bottom: 1px solid #e1e1e1;
-  color: #646464;
-  font-family: 'Dancing Script', cursive;
-  margin: 0 auto;
-  text-align: center;
-  width: 55%;
+  font-family: "Barlow", sans-serif;
   font-size: 30px; }
 
 .cat-links .posted-on a {
